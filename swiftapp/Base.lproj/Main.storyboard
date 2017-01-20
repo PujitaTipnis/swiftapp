@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aX-Nj-8jD">
-                                <rect key="frame" x="173" y="140.5" width="30" height="30"/>
+                                <rect key="frame" x="137" y="141" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6b-TF-XeV"/>
@@ -57,17 +57,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hao-28-pJx">
+                                <rect key="frame" x="177" y="141" width="60" height="30"/>
+                                <state key="normal" title="Subtract"/>
+                                <connections>
+                                    <action selector="subTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uau-ow-Qmc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Lk6-rt-0BV" firstAttribute="top" secondItem="Zgh-2j-5pk" secondAttribute="bottom" constant="31" id="8Ka-MZ-YiH"/>
                             <constraint firstItem="Zgh-2j-5pk" firstAttribute="top" secondItem="6aX-Nj-8jD" secondAttribute="bottom" constant="35.5" id="9fo-eT-CgS"/>
                             <constraint firstItem="Lk6-rt-0BV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D52-hu-wKh"/>
+                            <constraint firstItem="hao-28-pJx" firstAttribute="top" secondItem="4pe-cK-OoY" secondAttribute="bottom" constant="50" id="Gmu-mT-bye"/>
                             <constraint firstItem="4pe-cK-OoY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="LaH-hO-jwa"/>
                             <constraint firstItem="6aX-Nj-8jD" firstAttribute="top" secondItem="4pe-cK-OoY" secondAttribute="bottom" constant="50" id="Swm-96-mMt"/>
                             <constraint firstItem="4pe-cK-OoY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T9S-Qk-DoQ"/>
                             <constraint firstItem="hXr-4C-mSb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZCr-MF-4ac"/>
-                            <constraint firstItem="6aX-Nj-8jD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zrR-nt-RLi"/>
+                            <constraint firstItem="hao-28-pJx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="19.5" id="xzL-do-953"/>
+                            <constraint firstItem="6aX-Nj-8jD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-35.5" id="zrR-nt-RLi"/>
                         </constraints>
                     </view>
                     <connections>

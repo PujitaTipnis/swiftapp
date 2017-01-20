@@ -9,14 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var theLabel: UILabel!
     
     @IBOutlet weak var text1: UITextField!
     @IBOutlet weak var text2: UITextField!
     
     @IBAction func buttonClicked(_ sender: Any) {
-        theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+        
+            theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+    }
+    
+    @IBAction func subTapped(_ sender: Any) {
+        
+            theLabel.text = "\(Double(text1.text!)! - Double(text2.text!)!)"
     }
     
     override func viewDidLoad() {
@@ -25,12 +31,12 @@ class ViewController: UIViewController {
         //self.view.backgroundColor = UIColor.red
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
